@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -26,24 +27,24 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link to="/" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link to="/#about" className="text-gray-400 hover:text-white transition-colors duration-300">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/projects" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link to="/projects" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#skills" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link to="/#skills" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Skills
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
