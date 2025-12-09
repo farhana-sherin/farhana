@@ -106,7 +106,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-23">
       <div className="w-full max-w-4xl">
         
         {/* Header Section */}
@@ -180,7 +180,8 @@ export const ContactPage = () => {
                   <FaLinkedin size={18} />
                 </a>
                 <a 
-                  href="https://wa.me/918590486713?text=Hello%20Farhana,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." 
+                 href="https://wa.me/918590486713?text=Hello%20Farhana,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you?"
+ 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300"

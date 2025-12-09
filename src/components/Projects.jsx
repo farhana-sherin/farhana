@@ -162,9 +162,9 @@ export const Projects = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
           >
-            <span className="text-white">Featured</span>
-            <br />
-            <span className="text-white">Projects</span>
+            <span className="text-white">Featured Projects</span>
+           
+            
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
