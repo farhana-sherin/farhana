@@ -102,19 +102,19 @@ export const Skills = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA - Mobile Responsive */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-6 px-8 py-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/20">
-            <div className="text-2xl">🚀</div>
+          <div className="inline-flex flex-col sm:flex-row items-center gap-6 px-6 py-6 sm:px-8 sm:py-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/20 w-full sm:w-auto">
+            <div className="text-2xl mb-2 sm:mb-0">🚀</div>
 
-            <div className="text-left">
+            <div className="text-center sm:text-left">
               <h4 className="text-lg font-semibold text-white">Ready to work together?</h4>
               <p className="text-sm text-gray-400">Let's discuss your next project</p>
             </div>
 
             <Link
               to="/contact"
-              className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap"
             >
               Get In Touch
             </Link>
