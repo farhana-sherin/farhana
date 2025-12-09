@@ -20,7 +20,7 @@ export const Header = () => {
     { name: 'About', to: '/', hash: '#about' },
     { name: 'Projects', to: '/projects', hash: '' },
     { name: 'Skills', to: '/', hash: '#skills' },
-    { name: 'Contact', to: '/contact', hash: '' },
+   
   ]
 
   return (

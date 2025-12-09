@@ -11,7 +11,7 @@ export const Home = () => {
       <Hero/>
       <About/>
       <Skills/>
-      <ContactPage/>
+     
  
     </div>
   )

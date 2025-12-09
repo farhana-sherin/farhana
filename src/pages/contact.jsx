@@ -4,7 +4,8 @@ import {
   FaPhone, 
   FaMapMarkerAlt, 
   FaGithub, 
-  FaLinkedin 
+  FaLinkedin,
+  FaWhatsapp
 } from 'react-icons/fa';
 
 export const ContactPage = () => {
@@ -105,7 +106,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-23">
       <div className="w-full max-w-4xl">
         
         {/* Header Section */}
@@ -118,8 +119,10 @@ export const ContactPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           
-          {/* Contact Information */}
-          <div className="space-y-8">
+          {/* Contact Information Box */}
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <h2 className="text-xl font-bold mb-6">Contact Information</h2>
+            
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-lg bg-white/5 border border-white/10">
@@ -157,7 +160,7 @@ export const ContactPage = () => {
             </div>
 
             {/* Social Links */}
-            <div>
+            <div className="pt-6 mt-6 border-t border-white/10">
               <h3 className="text-sm font-medium mb-3">Follow Me</h3>
               <div className="flex space-x-3">
                 <a 
@@ -176,12 +179,22 @@ export const ContactPage = () => {
                 >
                   <FaLinkedin size={18} />
                 </a>
+                <a 
+                  href="https://wa.me/918590486713" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300"
+                >
+                  <FaWhatsapp size={18} />
+                </a>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <h2 className="text-xl font-bold mb-6">Send a Message</h2>
+            
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <input

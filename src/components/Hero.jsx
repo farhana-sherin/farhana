@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaArrowDown, FaDownload } from "react-icons/fa";
 import hero from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,13 +44,13 @@ export const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 ">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-black font-semibold text-base hover:bg-gray-200 transition-all duration-300 shadow-lg hover:-translate-y-1"
             >
               <span>Let's Connect</span>
               <FaArrowDown className="group-hover:translate-y-1 transition-transform duration-300" />
-            </a>
+            </Link>
             <a
               href="/projects"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-white text-white font-semibold text-base hover:bg-white hover:text-black transition-all duration-300"
@@ -87,11 +88,11 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image - Moved slightly to the right */}
+        {/* Right Image - Hidden on mobile, visible on larger screens */}
         <div
           className={`flex-1 flex items-center justify-center lg:justify-end relative z-10 h-full transition-all duration-1000 delay-300 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-          }`}
+          } hidden md:block`}
         >
           <div className="relative w-full h-full flex items-end justify-end max-h-[100vh]">
             {/* Image Container - Moved slightly right */}

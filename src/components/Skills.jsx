@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { SiTailwindcss, SiDjango, SiVercel } from "react-icons/si";
 import { MdOutlineApi } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const Skills = () => {
   const [visibleSkills, setVisibleSkills] = useState([]);
@@ -80,8 +81,8 @@ export const Skills = () => {
             >
               {/* Header removed — show single combined skills grid */}
 
-              {/* Skills Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              {/* Skills Grid - Two columns on mobile, more on larger screens */}
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                 {category.skills.map((skill, i) => (
                   <div
                     key={i}
@@ -111,12 +112,12 @@ export const Skills = () => {
               <p className="text-sm text-gray-400">Let's discuss your next project</p>
             </div>
 
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
 

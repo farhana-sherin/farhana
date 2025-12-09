@@ -53,11 +53,11 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold text-white">Get In Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:farhana23sherin9023@gmail.com"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <FaEnvelope className="text-purple-400" />
-                <span>your.email@example.com</span>
+                <span>farhana23sherin9023@gmail.com</span>
               </a>
               <div className="flex gap-4 pt-2">
                 <a
