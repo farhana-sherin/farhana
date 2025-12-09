@@ -179,6 +179,7 @@ export const ContactPage = () => {
                 >
                   <FaLinkedin size={18} />
                 </a>
+                
                 <a 
                  href="https://wa.me/918590486713?text=Hello%20Farhana,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you?"
  
